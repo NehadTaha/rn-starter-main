@@ -33,6 +33,13 @@ const styles = StyleSheet.create({
     //alignSelf: "stretch",
     alignSelf: "center",
     flex: 4,
+    // top: 0, //this will move the text down by 100
+    // left: 0, //this will move the text right by 100 
+    // bottom: 0, //this will move the text up by 100
+    // right: 0, //this will move the text left by 100
+    // position: "absolute", //this will move the text to the top left corner and it will overlap with other text
+    ...StyleSheet.absoluteFillObject, //this will move the text to the top left corner and it works as a shortcut for the above 4 lines 
+//position : "relative", //this will move the text to the top left corner but it will not overlap with other text
   },
   textTwoStyle: {
     borderWidth: 1,
@@ -40,6 +47,9 @@ const styles = StyleSheet.create({
     //alignSelf: "stretch",
     //alignSelf: "flex-start",
     flex: 4, //this will take up the remaining space
+    // position: "absolute",
+    position: "absolute",
+    
   },
   textThreeStyle: {
     borderWidth: 1,
